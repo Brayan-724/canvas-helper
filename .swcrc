@@ -1,0 +1,38 @@
+[
+  {
+    "test": ".*.ts",
+    "jsc": {
+      "target": "es3",
+      "parser": {
+        "syntax": "typescript",
+        "decorators": true
+
+      },
+      "loose": true,
+      "minify": {
+         "compress": {
+            "arguments": true,
+            "conditionals": true,
+            "dead_code": true,
+            "unused": true,
+            "keep_classnames": true,
+            "keep_infinity": true
+         },
+         "mangle": {
+            "keepClassNames": true,
+            "keepFnNames": true
+         }
+      }
+    }
+  },
+  {
+    "test": ".*.js",
+    "jsc": {
+      "type": "ecmascript"
+    },
+    "module": {
+      "type": "umd",
+      "strict": true
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "include": [ "src/*.ts" ],
+  "exclude": [ "node_modules" ],
+  "compilerOptions": {
+    "outDir": "lib",
+    "declaration": true,
+    "module": "ESNext",
+    "downlevelIteration": true,
+    "removeComments": true,
+    "pretty": false
+  }
+}
